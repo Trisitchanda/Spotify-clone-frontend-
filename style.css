@@ -102,5 +102,7 @@ body{
 }
 
 .card img{
-    
+    width: 183px;
+    height: 183px;
+    border-radius: 23px;
 }
