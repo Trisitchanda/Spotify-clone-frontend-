@@ -1,0 +1,106 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+}
+body{
+    background-color: black;
+    color: white;
+}
+
+.left{
+    width: 25vw;
+    height: 100vh;
+    /* padding: 23px;  */
+}
+
+.right{
+    width: 75vw;
+    height: 100vh;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.home{
+    /* min-height: 22vh; */
+}
+
+.home ul li{
+    width: 22px;
+    list-style: none;   
+    display: flex;
+    gap: 20px;
+    padding-top: 14px;
+    font-weight: bold;
+}
+
+.heading{
+    width: 100px;
+    font-weight: bold;
+
+}
+
+.library{
+    min-height: 49.6vh;
+    position: relative;
+    padding: 10px 10px 0px 10px;
+    height: 80vh;
+}
+
+.footer{
+    display: flex;
+    position: absolute;
+    font-size: 12px;
+    flex-wrap: wrap ;
+    gap: 13px;
+    bottom: 0;
+}
+
+.footer a{
+    color: gray
+}
+
+.header{
+    display: flex;
+    gap: 23px;
+    justify-content: space-between;
+    width: 70vw;
+    margin: 6px;
+    padding: 20px;
+    background-color: rgb(36, 36, 33);
+    border-radius: 5px;
+}
+
+.button{
+    display: flex;
+    gap: 20px;
+}
+
+.button button{
+    width: 83px;
+    height: 40px;
+    border-radius: 30px;
+    font-weight: bolder;
+    border: transparent;
+}
+
+.button button:hover{
+    background-color: rgb(77, 165, 42);
+    animation:ease-in-out;
+    color: white;
+}
+
+.nav img{
+    background-color: rgb(255, 255, 255);
+    /* color:white; */
+}
+
+.spotifyplaylist{
+    padding: 15px;
+}
+
+.card img{
+    
+}
