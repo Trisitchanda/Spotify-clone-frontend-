@@ -56,6 +56,7 @@ body{
     flex-wrap: wrap ;
     gap: 13px;
     bottom: 0;
+    padding: 10px 0px;
 }
 
 .footer a{
@@ -87,8 +88,8 @@ body{
 }
 
 .button button:hover{
-    background-color: rgb(77, 165, 42);
-    animation:ease-in-out;
+    background-color: rgba(212, 0, 255, 0.3);
+    transition:0.3s ease-in-out;
     color: white;
 }
 
@@ -101,8 +102,64 @@ body{
     padding: 15px;
 }
 
+/* .card{
+    padding: 11px;
+} */
 .card img{
-    width: 183px;
-    height: 183px;
+    border-radius: 17px;
+    object-fit: contain;
+    width: 100%;
+}
+.play img{
+    height: 37px;
+    position: absolute;
+    z-index: 1;
+    top: 62%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    width: 20%;
+    opacity: 0;
+    
+}
+.card:hover .play img{
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
+    top: 60%;
+    left: 84%;
+}
+
+.card:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(212, 0, 255, 0.3);
+
+}
+
+.card{
+    background-color: rgb(36, 36, 33);
+    width: 17vw;
+    /* min-height: 34vh; */
     border-radius: 23px;
+    padding: 11px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.card h2{
+    padding-top: 10px;
+    font-size: 17px;
+}
+
+.card p{
+    padding-top: 10px;
+    font-size: 15px;
+    font-weight: 100;
+    overflow:hidden;
+}
+
+.cardcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 10px;
 }
