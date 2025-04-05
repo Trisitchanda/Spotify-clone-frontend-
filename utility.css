@@ -39,3 +39,50 @@
 .p1{
     padding: 10px;
 }
+
+/* Dark Theme RGB Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1a1a1a;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2b2b2b;
+    border-radius: 5px;
+    border: 1px solid #3a3a3a;
+    box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(45deg, 
+        #6e00ff 0%, 
+        #ff00c1 25%, 
+        #ff7b00 50%, 
+        #ff00c1 75%, 
+        #6e00ff 100%);
+    background-size: 400% 400%;
+    animation: scrollbarGradient 3s ease infinite;
+    box-shadow: 0 0 5px rgba(255, 0, 193, 0.5);
+}
+
+::-webkit-scrollbar-corner {
+    background: #1a1a1a;
+}
+
+@keyframes scrollbarGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
